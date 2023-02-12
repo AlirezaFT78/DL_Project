@@ -254,3 +254,15 @@ class BertClassifier(nn.Module):
         final_layer = self.linear_relu_stack(pooled_output)
         return final_layer
 ##########################################################################################################################################
+class sentDataset(torch.utils.data.Dataset):
+    def __init__(self, encodings, labels):
+        self.encodings = encodings
+        self.labels = labels
+
+    def __getitem__(self, idx):
+        X = {key: torch.tensor(val[idx]) for key, val in self.encodings.items()}
+        y = self.labels[idx]
+        return X, y
+
+    def __len__(self):
+        return len(self.labels)
