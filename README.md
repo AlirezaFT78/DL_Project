@@ -1,5 +1,5 @@
 # Deep Learning Project 
-In this repository, I share my codes for the DL Course of the SUT EE department. The Project goal is to get familiar with Multi-Modal Dataset Classification. The dataset samples are movie scenes, their corresponding dialogues and emotion tags as output. Our work includes 4 phases described below:  
+In this repository, I share my codes for the DL Course of the SUT EE department. The Project goal is to get familiar with Multi-Modal Dataset Classification. The dataset samples are movie scenes, their corresponding dialogues, and emotion tags as output. Our work includes 4 phases described below:  
 Phase 0 is data pre-processing and face extraction from images.  
 Phase 1 is classifying based on faces and CNN models.  
 Phase 2 is classifying based on dialogue using NLP tools.  
